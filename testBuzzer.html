@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Buzzer Test</title>
+<script language="javascript">
+
+var ids = ["p1","p2","p3","host"];
+
+window.onkeydown = function(e) {
+	var key = e.keyCode ? e.keyCode : e.which;
+
+	var i = key - 37;
+
+	document.getElementById(ids[i]).style.background = "#FFFF00";
+
+}
+
+window.onkeyup = function(e) {
+	var key = e.KeyCode ? e.keyCode : e.which;
+
+	var i = key - 37;
+
+	document.getElementById(ids[i]).style.background = "#FFFFFF";
+}
+
+</script>
+</head>
+<body>
+
+<table width=100%>
+<tr style="height:300px">
+<td id="p1"><center>Player 1</center></td>
+<td id="p2"><center>Player 2</center></td>
+<td id="p3"><center>Player 3</center></td>
+</tr>
+<tr style="height:300px">
+<td colspan="3" id="host"><center>Host</center></td>
+</table>
+
+<button onClick="location.href='jeopardy.html';">Go to Jeopardy!</button>
+
+</body>
+</html>
