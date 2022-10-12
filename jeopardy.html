@@ -777,7 +777,7 @@ function selectClue(cat,clue) {
 		document.getElementById(1 + "" + cat + "" + clue).innerHTML = "";
 		cluesLeft-=1;
 		hostBuzzer = 1;
-		qValue = round * 200 * clue;
+		qValue = round * 10 * clue;
 		viewClue(round,clue,cat);
 		//alert(cat + " " + jddCol + " " + clue + " " + jddRow);
 		if ((round == 1 && clue == jddRow && cat == jddCol) || (round == 2 && clue == j2ddRow1 && cat == j2ddCol1) || (round == 2 && clue == j2ddRow2 && cat == j2ddCol2)) {
